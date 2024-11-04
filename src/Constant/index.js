@@ -20,11 +20,12 @@ import avatarA from '../assets/avatarA.png'
 import avatarB from '../assets/avatarB.png'
 import avatarC from '../assets/avatarC.png'
 import avatarD from '../assets/avatarD.png'
+import { title } from 'framer-motion/client'
 export const navlinks =[
     {
         name: "Home",
         title: "Home",
-        url: '#'
+        url: '/'
 
     },
     {
@@ -43,7 +44,6 @@ export const navlinks =[
         title: "Contact",
         url: '/contact',
     },
-    
     
 ]
 

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { content } from "../Constant/index"
 import { motion } from "framer-motion"
-import { textVariant, staggerContainer, fadeIn, } from '../Utils/Motion'
+import { textVariant, staggerContainer, fadeIn, } from '../utils/motion'
 
 
 

@@ -2,7 +2,7 @@ import {useEffect} from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import img from '../assets/about3.jpg'
-
+import  Typewriter  from "typewriter-effect";
 
 const About =() =>{
 
@@ -29,21 +29,27 @@ const About =() =>{
        tracking-[0.2px] md:font-bold '>
                 Know More About Figma Land
             </h1>
-            <p 
-                data-aos='fade-down' 
-                data-aos-duration='500'
-                data-aos-delay="600"
-                data-aos-easing="linear"
-                className="heroS mt-[10px] text-center md:mt-3 text-[20px]
-                sm:w-[382px] sm:h-[120px] flex items-center leading-[30px]
-                tracking-[0.2px] md:w-[700px] md:h-[60px] p-[20px] md:pl-[60px]
-               ">
-              To promote high standards in coding, we emphasize the importance of best practices in React development. 
-              We provide guidelines and tools for code reviews, testing, and optimization,
-               helping developers write clean,
-               maintainable code that can scale effectively.
+            
                 
-            </p>
+               <div className="heroS mt-[10px] text-center md:mt-3 text-[20px]
+                sm:w-[382px] sm:h-[120px] flex items-center leading-[30px]
+                tracking-[0.2px] md:w-[700px] md:h-[60px] p-[20px] md:pl-[60px]">
+               <Typewriter
+               options={{
+                strings:[
+                "To promote high standards in coding, we emphasize the importance of best practices in React development", 
+              "We provide guidelines and tools for code reviews, testing, and optimization",
+               "helping developers write clean, maintainable code that can scale effectively"
+            ],
+            autoStart:true,
+            loop:true,
+            deleteSpeed:20,
+            typeSpeed:1,
+            delay:50,
+               }}
+              />
+                </div>
+            
            <div 
             data-aos="fade-down" 
             data-aos-delay="1000"
